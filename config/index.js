@@ -114,7 +114,24 @@ export const config = {
    * 如果为0, 则默认展示全部
    */
   FESTIVALS_LIMIT: 2,
+  
+    /** 日期相关 */
 
+  /** 你现在可以随心增加你认为的所有的需要纪念的日子啦！
+    * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
+    * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }} 
+    * */
+  CUSTOMIZED_DATE_LIST: [
+    // 在一起的日子
+    {"keyword": "love_day", date: "2015-05-01"},
+    // 结婚纪念日
+    {"keyword": "marry_day", date: "2020-01-04"},
+    // 退伍日, 不用可以删掉
+    {"keyword": "ex_day", date: "2022-08-31"},
+    // sakana日
+    // {"keyword": "sakana_day", date: "2022-01-06"},
+    // ... 
+  ],
 
   /** 插槽 */
 
@@ -125,9 +142,20 @@ export const config = {
   SLOT_LIST: [
     // 这样配置的话，就会每次发送这句话
     {"keyword": "encourage_oneself", contents: "按时吃饭，不要熬夜"},
+    // 这样配置的话，就会每次随机选一句话发送
+    {"keyword": "lover_prattle", contents: [
+      "因为太喜欢你，所以看谁都像是情敌。",
+      "申请成为你爱里的永久居民。",
+      "你很傻，你很笨，可我还是很羡慕你，因为你有我",
+      "遇见你，就好像捡到了100斤的运气",
+    ]},
+  ],
 
+  /** 每日一言 */
 
+  // 好文节选的内容类型
+  // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
+  LITERARY_PREFERENCE: ""
 
 
 }
-
