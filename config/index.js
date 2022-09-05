@@ -4,10 +4,10 @@ export const config = {
    */
 
   // 公众号APP_ID
-  APP_ID: "",
+  APP_ID: "wxe357760053789300",
 
   // 公众号APP_SECRET
-  APP_SECRET: "",
+  APP_SECRET: "b499a6fbdfea3c7a4c9c520f9f0ca231",
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如
@@ -27,17 +27,17 @@ export const config = {
   USERS: [
     {
       // 想要发送的人的名字
-      name: "老婆0",
+      name: "小夏老师",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "ohxOO6VskY2v40Kuf5ywIZVRM3puXhk",
+      id: "oX4316OeKwuMEurQnX0c2-kQL7Hs",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "Wue80GrtY1nAi5a4tam4FDxZF59WNx9pwcBc06LMpANnu8",
+      useTemplateId: "c3NYnrRWciFgTde5qwC1wtxvlU3c0MqNAmJYsVBgqs",
       // 所在省份
-      province: "广东",
+      province: "宁夏",
       // 所在城市
-      city: "肇庆",
+      city: "银川",
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: "https://wangxinleo.cn"
+      openUrl: "https://weibo.com/newlogin?url=https%3A%2F%2Fwww.weibo.com%2F"
     }, 
     {
       name: "老婆1", 
@@ -70,7 +70,7 @@ export const config = {
    */
 
   // 回调消息模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "zjV1glIuCXo4Csr23aXWEio1iP74sZJ7IQEES95lDsg6c4yOU",
+  CALLBACK_TEMPLATE_ID: "oX4316OeKwuMEurQnX0c2-kQL7Hs",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -78,7 +78,7 @@ export const config = {
       // 一般都填自己
       name: "自己",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "ohx12OO6VskYv03Kuf43ywIZVRM4puXhk",
+      id: "oX4316OeKwuMEurQnX0c2-kQL7Hs",
     }, 
   ],
     
@@ -102,8 +102,8 @@ export const config = {
    * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
    */
   FESTIVALS: [
-    {"type": "生日", "name": "老婆", "year": "1996", "date": "09-02"},
-    {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+    {"type": "生日", "name": "美女", "year": "1998", "date": "01-11"},
+    {"type": "节日", "name": "高考", "year": "2022", "date": "06-07"},
     {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
     {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
   ],
@@ -113,7 +113,7 @@ export const config = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  FESTIVALS_LIMIT: 2,
 
   /** 日期相关 */
 
@@ -141,7 +141,7 @@ export const config = {
     * */
   SLOT_LIST: [
     // 这样配置的话，就会每次发送这句话
-    {"keyword": "encourage_oneself", contents: "你主要的问题在于读书太少而想得太多"},
+    {"keyword": "encourage_oneself", contents: "按时吃饭，不要熬夜"},
     // 这样配置的话，就会每次随机选一句话发送
     {"keyword": "lover_prattle", contents: [
       "因为太喜欢你，所以看谁都像是情敌。",
@@ -159,4 +159,4 @@ export const config = {
 
 
 }
-Footer
+
