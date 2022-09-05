@@ -31,7 +31,7 @@ export const config = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "oX4316OeKwuMEurQnX0c2-kQL7Hs",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "c3NYnrRWciFgTde5qwC1wtxvlU3c0MqNAmJYsVBgqs",
+      useTemplateId: "-c3NYnrRWciFgTde5qwC1wtxvlU3c0MqNAmJYsVBgqs",
       // 所在省份
       province: "宁夏",
       // 所在城市
@@ -89,9 +89,9 @@ export const config = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "广东",
+  PROVINCE: "宁夏",
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "惠州",
+  CITY: "银川",
 
   /** 重要节日相关 */
 
@@ -115,23 +115,6 @@ export const config = {
    */
   FESTIVALS_LIMIT: 2,
 
-  /** 日期相关 */
-
-  /** 你现在可以随心增加你认为的所有的需要纪念的日子啦！
-    * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
-    * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }} 
-    * */
-  CUSTOMIZED_DATE_LIST: [
-    // 在一起的日子
-    {"keyword": "love_day", date: "2015-05-01"},
-    // 结婚纪念日
-    {"keyword": "marry_day", date: "2020-01-04"},
-    // 退伍日, 不用可以删掉
-    {"keyword": "ex_day", date: "2022-08-31"},
-    // sakana日
-    // {"keyword": "sakana_day", date: "2022-01-06"},
-    // ... 
-  ],
 
   /** 插槽 */
 
@@ -142,20 +125,8 @@ export const config = {
   SLOT_LIST: [
     // 这样配置的话，就会每次发送这句话
     {"keyword": "encourage_oneself", contents: "按时吃饭，不要熬夜"},
-    // 这样配置的话，就会每次随机选一句话发送
-    {"keyword": "lover_prattle", contents: [
-      "因为太喜欢你，所以看谁都像是情敌。",
-      "申请成为你爱里的永久居民。",
-      "你很傻，你很笨，可我还是很羡慕你，因为你有我",
-      "遇见你，就好像捡到了100斤的运气",
-    ]},
-  ],
 
-  /** 每日一言 */
 
-  // 好文节选的内容类型
-  // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: ""
 
 
 }
