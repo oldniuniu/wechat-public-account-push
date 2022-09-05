@@ -33,9 +33,9 @@ export const config = {
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "gVvb2JfCtAS-APPOb8qDVbQcIkjldDmqGU8TtCLFd9s",
       // 所在省份
-      province: "宁夏",
+      province: "",
       // 所在城市
-      city: "银川",
+      city: "",
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
       openUrl: "https://weibo.com/newlogin?url=https%3A%2F%2Fwww.weibo.com%2F"
     }, 
@@ -121,17 +121,6 @@ export const config = {
     * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
     * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }} 
     * */
-  CUSTOMIZED_DATE_LIST: [
-    // 在一起的日子
-    {"keyword": "love_day", date: "2015-05-01"},
-    // 结婚纪念日
-    {"keyword": "marry_day", date: "2020-01-04"},
-    // 退伍日, 不用可以删掉
-    {"keyword": "ex_day", date: "2022-08-31"},
-    // sakana日
-    // {"keyword": "sakana_day", date: "2022-01-06"},
-    // ... 
-  ],
 
   /** 插槽 */
 
@@ -142,17 +131,10 @@ export const config = {
   SLOT_LIST: [
     // 这样配置的话，就会每次发送这句话
     {"keyword": "encourage_oneself", contents: "按时吃饭，不要熬夜"},
-    // 这样配置的话，就会每次随机选一句话发送
-    {"keyword": "lover_prattle", contents: [
 
-    ]},
   ],
 
-  /** 每日一言 */
 
-  // 好文节选的内容类型
-  // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: ""
 
 
 }
