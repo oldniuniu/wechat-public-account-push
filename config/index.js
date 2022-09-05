@@ -102,8 +102,8 @@ export const config = {
    * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
    */
   FESTIVALS: [
-    {"type": "生日", "name": "美女", "year": "1998", "date": "01-11"},
-    {"type": "节日", "name": "高考", "year": "2022", "date": "06-07"},
+    {"type": "生日", "name": "美女生日", "year": "1998", "date": "01-11"},
+    {"type": "节日", "name": "高考", "year": "2023", "date": "06-07"},
     {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
     {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
   ],
@@ -144,10 +144,7 @@ export const config = {
     {"keyword": "encourage_oneself", contents: "按时吃饭，不要熬夜"},
     // 这样配置的话，就会每次随机选一句话发送
     {"keyword": "lover_prattle", contents: [
-      "因为太喜欢你，所以看谁都像是情敌。",
-      "申请成为你爱里的永久居民。",
-      "你很傻，你很笨，可我还是很羡慕你，因为你有我",
-      "遇见你，就好像捡到了100斤的运气",
+
     ]},
   ],
 
